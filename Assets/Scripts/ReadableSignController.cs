@@ -13,19 +13,15 @@ public class ReadableSignController : Interactable
     public string messageText;
 
     private TextMeshProUGUI _textMeshProUGUI;
-    private bool _isActive;
 
     void Start()
     {
-        _isActive = false;
-        panel.gameObject.SetActive(_isActive);
+        panel.gameObject.SetActive(false);
     }
 
     public override void Interact()
     {
         textMesh.text = messageText;
-        _isActive = !_isActive;
-
-        panel.gameObject.SetActive(_isActive);
+        panel.gameObject.SetActive(true);
     }
 }

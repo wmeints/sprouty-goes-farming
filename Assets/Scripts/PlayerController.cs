@@ -12,17 +12,14 @@ public class PlayerController : MonoBehaviour
     public float speed;
 
     public Rigidbody2D rigidBody;
-
+    public Canvas dialogCanvas;
     public Animator animator;
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CheckInteraction();    
-        }
-
+        CheckInteraction();    
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("MainMenu");
@@ -53,13 +50,23 @@ public class PlayerController : MonoBehaviour
     private void CheckInteraction()
     {
         var hits = Physics2D.BoxCastAll(transform.position, _raycastSize, 0.0f, Vector2.zero);
-
-        if (hits.Length > 0)
+        var interactableHits = hits.Where(x => x.IsInteractable()).ToList();
+        
+        if (interactableHits.Count > 0)
         {
-            foreach (var hit in hits.Where(x => x.IsInteractable()))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                hit.Interact();
+                foreach (var interactableHit in interactableHits)
+                {
+                    interactableHit.Interact();
+                }
+                
             }
+        }
+        else
+        {
+            // Hide the dialog, we're not anywhere near an interactable object.
+            dialogCanvas.gameObject.SetActive(false);
         }
     }
 }

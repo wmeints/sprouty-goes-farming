@@ -23,7 +23,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            col.GetComponent<PlayerController>().OpenInteractableIcon();
+            col.GetComponent<PlayerController>().CloseInteractableIcon();
         }
     }
 
