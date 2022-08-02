@@ -21,7 +21,7 @@ Make sure you have the latest version of Unity on your machine and a code editor
 like VSCode, Visual Studio 2022, or Rider. Next, clone this repository to your
 machine and open it in Unity. Have fun!
 
-## :merge: Pull requests
+## :pencil: Pull requests
 
 We accept pull requests for bug fixes. Feature enhancements are welcome too, but
 we're a bit more restrictive there :-)
