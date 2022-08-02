@@ -43,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -1651,14 +1651,14 @@ TextureImporter:
       Grass_30: -1963439558
       Grass_64: 465430038
       Grass_27: 1041364385
-      Grass_23: 731058580
       Grass_8: -1695420177
+      Grass_19: -2073636150
       Grass_58: -575517793
       Grass_24: 1864127314
       Grass_52: 511361959
-      Grass_19: -2073636150
-      Grass_70: -1378614714
       Grass_9: 942385346
+      Grass_70: -1378614714
+      Grass_23: 731058580
       Grass_35: 1756849621
       Grass_38: 447419791
       Grass_21: -242516808
