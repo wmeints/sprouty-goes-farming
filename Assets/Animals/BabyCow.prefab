@@ -185,6 +185,7 @@ MonoBehaviour:
   childCollider: {fileID: 2502932989121105548}
   agent: {fileID: 8957076336365081066}
   player: {fileID: 0}
+  animator: {fileID: 2123264324861240865}
 --- !u!195 &8957076336365081066
 NavMeshAgent:
   m_ObjectHideFlags: 0
