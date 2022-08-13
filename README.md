@@ -21,6 +21,16 @@ Make sure you have the latest version of Unity on your machine and a code editor
 like VSCode, Visual Studio 2022, or Rider. Next, clone this repository to your
 machine and open it in Unity. Have fun!
 
+## :book: Learn more!
+
+I've made a series of blogposts about this project on my website:
+
+- [Part 1 - Setting up the game](https://fizzylogic.nl/2022/08/03/how-to-build-a-game-with-unity-part-1)
+- [Part 2 - Level design using tilemaps](https://fizzylogic.nl/2022/08/03/how-to-build-a-game-with-unity-part-2)
+- [Part 3 - Creating a player character](https://fizzylogic.nl/2022/08/03/how-to-build-a-game-with-unity-part-3)
+
+I'll be adding more posts here as they get published.
+
 ## :pencil: Pull requests
 
 We accept pull requests for bug fixes. Feature enhancements are welcome too, but
